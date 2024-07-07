@@ -1,0 +1,11 @@
+name: "Setup ASPL Project"
+description: "GitHub Action for setting up an ASPL installation in your workspace"
+author: "Wertzui123"
+branding:
+  color: "purple"
+  icon: "code"
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/setup.sh
+      shell: bash
