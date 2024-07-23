@@ -7,5 +7,7 @@ branding:
 runs:
   using: "composite"
   steps:
-    - run: ${{ github.action_path }}/setup.sh
+    - env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: ${{ github.action_path }}/setup.sh
       shell: bash
