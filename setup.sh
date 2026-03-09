@@ -3,6 +3,7 @@ set -ex
 
 cd $GITHUB_WORKSPACE/..
 
-wget "https://github.com/aspl-lang/aspl/blob/main/install.sh?raw=true" -O "install.sh"
+wget --header="Authorization: token $GITHUB_TOKEN" "https://raw.githubusercontent.com/aspl-lang/aspl/main/install.sh" -O "install.sh"
+
 chmod +x install.sh
 ./install.sh
