@@ -1,4 +1,4 @@
-name: "Setup ASPL Project"
+name: "Setup ASPL Installation"
 description: "GitHub Action for setting up an ASPL installation in your workspace"
 author: "Wertzui123"
 branding:
