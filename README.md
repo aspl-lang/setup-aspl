@@ -3,6 +3,6 @@ This GitHub Action simply sets up an ASPL installation, including the compiler, 
 
 ## Example Usage
 ```yaml
-uses: aspl-lang/setup-aspl@v1.1
+uses: aspl-lang/setup-aspl@v1.2
 run: aspl compile .
 ```
